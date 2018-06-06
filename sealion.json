@@ -1,0 +1,26 @@
+{
+    "homepage": "http://www.sealion.at/",
+    "version": "1.2.1",
+    "url": "https://downloads.sourceforge.net/mmdasp/sealion/1.2.1/sealion-1.2.1-win32.x86_64.zip",
+    "hash": "cf97e777b9f118f0c896481985a240a5cf1cb82fe7a1c509d789f7c3d6a1bfb0",
+    "extract_dir": "eclipse",
+    "shortcuts": [
+        [
+            "eclipse.exe",
+            "SeaLion"
+        ]
+    ],
+    "checkver": {
+        "github": "https://sourceforge.net/projects/mmdasp/"
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/mmdasp/sealion/$version/sealion-$version-win32.x86_64.zip",
+        "extract_dir": "eclipse"
+    },
+    "suggest": {
+        "JRE": [
+            "java/oraclejre"
+        ]
+    },
+    "notes": "'sealion' requires Java to run"
+}
