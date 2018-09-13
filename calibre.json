@@ -1,9 +1,9 @@
 {
     "homepage": "https://calibre-ebook.com/",
-    "version": "3.25.0",
+    "version": "3.30.0",
     "license": "GPL-3.0",
-    "url": "https://github.com/kovidgoyal/calibre/releases/download/v3.25.0/calibre-portable-installer-3.25.0.exe#/calibre-portable-installer.exe",
-    "hash": "c943615f3f8884280535dfb04baf03977d790a4450d5ac217ac9f2cb0f7d4ced",
+    "url": "https://github.com/kovidgoyal/calibre/releases/download/v3.30.0/calibre-portable-installer-3.30.0.exe#/calibre-portable-installer.exe",
+    "hash": "2cd097fe054652eebd101e44a75fabc35291f36d7000628a24f19e7f360732e8",
     "persist": [
         "Calibre Portable\\Calibre Library",
         "Calibre Portable\\Calibre Settings"

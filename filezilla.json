@@ -1,17 +1,17 @@
 {
     "homepage": "https://filezilla-project.org/",
-    "version": "3.33.0",
+    "version": "3.36.0",
     "architecture": {
         "64bit": {
-            "url": "https://download.filezilla-project.org/client/FileZilla_3.33.0_win64.zip",
-            "hash": "sha512:c413f039655a52ae2e80ac3f14129f714f222c1743e01f9415bacffe3c3f8616d7963cd7e6b0093b8ceafe04f5ee19707d63d5e17a5fbc791e2f5fd6028cb830"
+            "url": "https://download.filezilla-project.org/client/FileZilla_3.36.0_win64.zip",
+            "hash": "sha512:52761a92dadba350a2000b07f30783dfa760b780b3f23565c54b778354b0c9201d1cda3b539909e5db05fefd1691d45dc62b2f0e078aacef6d50a1cc3bd64687"
         },
         "32bit": {
-            "url": "https://download.filezilla-project.org/client/FileZilla_3.33.0_win32.zip",
-            "hash": "sha512:18d5ba2f3119a33cb42b416603637021bac2d7d6a037c7c92e3d8efe0b00f0739c08c2c6a992094f392b85aca3cee6ddd0ee9263b449799adf3cec492cedfc40"
+            "url": "https://download.filezilla-project.org/client/FileZilla_3.36.0_win32.zip",
+            "hash": "sha512:a3cc1b801e35b469822ba331bada96c112cd4ea91957f86d79333fecee32594a581cf73a9375ecf6bfd3e1eca9a790a4d8ccb65ae95de53f0beeef250581b538"
         }
     },
-    "extract_dir": "FileZilla-3.33.0",
+    "extract_dir": "FileZilla-3.36.0",
     "bin": [
         "filezilla.exe"
     ],

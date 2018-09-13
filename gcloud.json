@@ -1,21 +1,23 @@
 {
-    "version": "203.0.0",
+    "version": "214.0.0",
     "homepage": "https://cloud.google.com/sdk/",
     "architecture": {
         "64bit": {
-            "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-203.0.0-windows-x86_64-bundled-python.zip",
-            "hash": "186d6fe362288fe75e085e14d992b9e160da06b35e69b26ba3a7bcf8ef95124d"
+            "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-214.0.0-windows-x86_64-bundled-python.zip",
+            "hash": "92dd24c60db1e304de2f2131d7785d9ad5be042a05a53b995d96ce6fb9fbffca"
         },
         "32bit": {
-            "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-203.0.0-windows-x86-bundled-python.zip",
-            "hash": "350c937ebb4465990887b75bc704fa60d53621d4a2e542a8847360cba30f1b05"
+            "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-214.0.0-windows-x86-bundled-python.zip",
+            "hash": "fe91fd44cedc0d4322bf3f0f02611d006ba3624a5e53fbe73011b252065ff440"
         }
     },
     "extract_dir": "google-cloud-sdk",
     "bin": [
         "bin\\gcloud.cmd",
         "bin\\gsutil.cmd",
-        "bin\\bq.cmd"
+        "bin\\bq.cmd",
+        "bin\\docker-credential-gcloud.cmd",
+        "bin\\git-credential-gcloud.cmd"
     ],
     "post_install": "gcloud init",
     "checkver": {

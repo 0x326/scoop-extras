@@ -1,5 +1,5 @@
 {
-    "version": "5.91",
+    "version": "5.941",
     "homepage": "https://www.reaper.fm",
     "bin": [
         "reaper.exe",
@@ -16,24 +16,24 @@
         ]
     ],
     "installer": {
-        "script": "
-            # Copy out installation files
-            Move-Item \"$dir\\`$INSTDIR`$_8_\\*\" -Destination \"$dir\"
-
-            # Remove unused folders
-            Remove-Item \"$dir\\`$INSTDIR`$_8_\" -Recurse
-            Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse
-            Remove-Item \"$dir\\`$COMMONFILES64\" -Recurse
-        "
+        "script": [
+            "# Copy out installation files",
+            "Move-Item \"$dir\\`$INSTDIR`$_8_\\*\" -Destination \"$dir\"",
+            "",
+            "# Remove unused folders",
+            "Remove-Item \"$dir\\`$INSTDIR`$_8_\" -Recurse",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
+            "Remove-Item \"$dir\\`$COMMONFILES64\" -Recurse"
+        ]
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.reaper.fm/files/5.x/reaper591_x64-install.exe#/dl.7z",
-            "hash": "6f4279734311f05c1d684ab265020e562503c84d6c8e33ece04ed78d3b734f6e"
+            "url": "https://www.reaper.fm/files/5.x/reaper5941_x64-install.exe#/dl.7z",
+            "hash": "cb5f39c84f6e27953b874dc2ae3e65ca956ecf4282568af2de72ba1e04b28b79"
         },
         "32bit": {
-            "url": "https://www.reaper.fm/files/5.x/reaper591-install.exe#/dl.7z",
-            "hash": "6de2320ef9306e71fd5544e274bc62af683173316f0d57029611099592b53a79"
+            "url": "https://www.reaper.fm/files/5.x/reaper5941-install.exe#/dl.7z",
+            "hash": "a2eb169ec9750fd933db06a47aaab87a748dace2182fbc4789ba972689b717e6"
         }
     },
     "checkver": {

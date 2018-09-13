@@ -1,25 +1,27 @@
 {
     "homepage": "https://gitea.io/",
-    "version": "1.4.1",
+    "version": "1.5.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/go-gitea/gitea/releases/download/v1.4.1/gitea-1.4.1-windows-4.0-amd64.exe#/gitea.exe",
-            "hash": "e4757dccb24579112caaed491115dc698977f3496fa01fbd32c519b8398d2102"
+            "url": "https://github.com/go-gitea/gitea/releases/download/v1.5.0/gitea-1.5.0-windows-4.0-amd64.exe#/gitea.exe",
+            "hash": "28ad3b2476b28ad830b23b443c2db69a0e8e21674dfc1e949196f4bfcf31307d"
         },
         "32bit": {
-            "url": "https://github.com/go-gitea/gitea/releases/download/v1.4.1/gitea-1.4.1-windows-4.0-386.exe#/gitea.exe",
-            "hash": "970a030ab6627edf3a382df93e0291f65b4cc47d8be93db6619e22adb0932f49"
+            "url": "https://github.com/go-gitea/gitea/releases/download/v1.5.0/gitea-1.5.0-windows-4.0-386.exe#/gitea.exe",
+            "hash": "94da76b20bffcda5e7177970d030d026faa036e2db5954d88cfae8c8e13c0920"
         }
     },
-    "post_install": "echo 'Creating $persist_dir\\custom\\conf.app.ini'
-    if(!(test-path \"$persist_dir\\custom\\conf\")) { mkdir \"$persist_dir\\custom\\conf\" > $null }
-    if(!(test-path \"$persist_dir\\custom\\conf\\app.ini\")) {
-        $gitea = \"[database]`nPATH = $persist_dir/data/gitea.db\"
-        $gitea += \"`n[repository]`nROOT = $persist_dir/repositories\"
-        $gitea += \"`n[log]`nROOT_PATH = $persist_dir/log\"
-        echo $gitea | % {$_.replace(\"\\\",\"/\") } | out-file -encoding oem \"$persist_dir\\custom\\conf\\app.ini\"
-    }",
+    "post_install": [
+        "echo 'Creating $persist_dir\\custom\\conf.app.ini'",
+        "if(!(test-path \"$persist_dir\\custom\\conf\")) { mkdir \"$persist_dir\\custom\\conf\" > $null }",
+        "if(!(test-path \"$persist_dir\\custom\\conf\\app.ini\")) {",
+        "    $gitea = \"[database]`nPATH = $persist_dir/data/gitea.db\"",
+        "    $gitea += \"`n[repository]`nROOT = $persist_dir/repositories\"",
+        "    $gitea += \"`n[log]`nROOT_PATH = $persist_dir/log\"",
+        "    echo $gitea | % {$_.replace(\"\\\",\"/\") } | out-file -encoding oem \"$persist_dir\\custom\\conf\\app.ini\"",
+        "}"
+    ],
     "bin": "gitea.exe",
     "notes": "Run 'gitea web -c \"$persist_dir\\custom\\conf\\app.ini\"' to start the webserver",
     "checkver": {

@@ -1,9 +1,9 @@
 {
     "homepage": "https://signal.org/",
-    "license": "GPL-3.0",
-    "version": "1.12.0",
-    "hash": "01b1096bb9f4e30fe973b86d43e06e18a541947d252ea4a35d0660601455e7d4",
-    "url": "https://updates.signal.org/desktop/signal-desktop-win-1.12.0.exe#/dl.7z",
+    "license": "GPL-3.0-only",
+    "version": "1.15.5",
+    "hash": "04d1322a42c282702a8b6396d1137a19bc4c2f33539df45cf7be76a5b2cccd0c",
+    "url": "https://updates.signal.org/desktop/signal-desktop-win-1.15.5.exe#/dl.7z",
     "checkver": {
         "url": "https://updates.signal.org/desktop/latest.yml",
         "re": "version:\\s([\\d.]+)"
